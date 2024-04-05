@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container h2 {
+        text-align: center;
+      }
+
+      .container form {
+        margin-top: 20px;
+      }
+
+      .container form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .container form input[type="text"],
+      .container form input[type="email"],
+      .container form textarea,
+      .container form input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+      }
+
+      .container form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .container form button:hover {
+        background-color: #0056b3;
+      }
+
+      .container p {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .container p a {
+        color: #007bff;
+      }
+
+      .container p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration</h2>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br /><br />
+        <label for="image">Upload Image:</label>
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept="image/*"
+          required
+        /><br /><br />
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
